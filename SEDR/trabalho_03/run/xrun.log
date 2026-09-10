@@ -1,0 +1,68 @@
+xrun(64): 24.09-s001: (c) Copyright 1995-2024 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	24.09-s001: Started on May 10, 2026 at 21:29:39 -03
+xrun
+	-64bit
+	-sv
+	-f files.txt
+		../source/and_gate.sv
+		../source/inv_gate.sv
+		../source/or_gate.sv
+		../source/xor_top.sv
+		../tb/tb_xor.sv
+	-access +rwc
+	-l xrun.log
+file: ../source/and_gate.sv
+	module worklib.and_gate:sv
+		errors: 0, warnings: 0
+file: ../source/inv_gate.sv
+	module worklib.inv_gate:sv
+		errors: 0, warnings: 0
+file: ../source/or_gate.sv
+	module worklib.or_gate:sv
+		errors: 0, warnings: 0
+file: ../source/xor_top.sv
+	module worklib.xor_top:sv
+		errors: 0, warnings: 0
+file: ../tb/tb_xor.sv
+	module worklib.tb_xor:sv
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		tb_xor
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.or_gate:sv <0x164b789c>
+			streams:   1, words:   223
+		worklib.and_gate:sv <0x43ead32f>
+			streams:   1, words:   205
+		worklib.inv_gate:sv <0x46da23a8>
+			streams:   1, words:   184
+		worklib.xor_top:sv <0x0a9df94a>
+			streams:   9, words:  2233
+		worklib.tb_xor:sv <0x05fde148>
+			streams:   4, words:  9052
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		              Instances  Unique
+		Modules:              7       5
+		Registers:           13      11
+		Scalar wires:        23       -
+		Initial blocks:       1       1
+		Cont. assignments:    5       3
+		Pseudo assignments:  12       -
+	Writing initial simulation snapshot: worklib.tb_xor:sv
+Loading snapshot worklib.tb_xor:sv .................... Done
+xcelium> source /home/tools/cadence/installs/XCELIUM2209/tools/xcelium/files/xmsimrc
+xcelium> run
+Tempo | a b | y (XOR)
+----------------------
+   5  | 0 0 | 0
+  10  | 0 1 | 1
+  15  | 1 0 | 1
+  20  | 1 1 | 0
+Simulation complete via $finish(1) at time 25 NS + 0
+../tb/tb_xor.sv:23 	$finish;
+xcelium> exit
+TOOL:	xrun(64)	24.09-s001: Exiting on May 10, 2026 at 21:29:39 -03  (total: 00:00:00)
