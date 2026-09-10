@@ -1,0 +1,9 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-64bit
+-sv
+../tb/tb_filtro.sv
+../outputs_Jun30-22-48-16/lowp6_netlist.v
+../library/gscl45nm.v

@@ -1,0 +1,5 @@
+//
+// File created by:  xrun
+// Do not modify this file
+
+s1::(30Jun2026:22:50:44):( xrun -64bit -sv ../tb/tb_filtro.sv ../outputs_Jun30-22-48-16/lowp6_netlist.v ../library/gscl45nm.v )&&(./xcelium.d/env.d/env.history.30Jun2026_22_50_44)

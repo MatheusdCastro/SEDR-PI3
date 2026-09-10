@@ -1,0 +1,157 @@
+xrun(64): 24.09-s001: (c) Copyright 1995-2024 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	24.09-s001: Started on Jun 30, 2026 at 22:50:44 -03
+xrun
+	-64bit
+	-sv
+	../tb/tb_filtro.sv
+	../outputs_Jun30-22-48-16/lowp6_netlist.v
+	../library/gscl45nm.v
+file: ../tb/tb_filtro.sv
+	module worklib.tb_filtro:sv
+		errors: 0, warnings: 0
+file: ../outputs_Jun30-22-48-16/lowp6_netlist.v
+	module worklib.lowp6:v
+		errors: 0, warnings: 0
+file: ../library/gscl45nm.v
+	module worklib.AND2X1:v
+		errors: 0, warnings: 0
+	module worklib.AND2X2:v
+		errors: 0, warnings: 0
+	module worklib.AOI21X1:v
+		errors: 0, warnings: 0
+	module worklib.AOI22X1:v
+		errors: 0, warnings: 0
+	module worklib.BUFX2:v
+		errors: 0, warnings: 0
+	module worklib.BUFX4:v
+		errors: 0, warnings: 0
+	module worklib.CLKBUF1:v
+		errors: 0, warnings: 0
+	module worklib.CLKBUF2:v
+		errors: 0, warnings: 0
+	module worklib.CLKBUF3:v
+		errors: 0, warnings: 0
+	module worklib.DFFNEGX1:v
+		errors: 0, warnings: 0
+	module worklib.DFFPOSX1:v
+		errors: 0, warnings: 0
+	module worklib.DFFSR:v
+		errors: 0, warnings: 0
+	module worklib.FAX1:v
+		errors: 0, warnings: 0
+	module worklib.HAX1:v
+		errors: 0, warnings: 0
+	module worklib.INVX1:v
+		errors: 0, warnings: 0
+	module worklib.INVX2:v
+		errors: 0, warnings: 0
+	module worklib.INVX4:v
+		errors: 0, warnings: 0
+	module worklib.INVX8:v
+		errors: 0, warnings: 0
+	module worklib.LATCH:v
+		errors: 0, warnings: 0
+	module worklib.MUX2X1:v
+		errors: 0, warnings: 0
+	module worklib.NAND2X1:v
+		errors: 0, warnings: 0
+	module worklib.NAND3X1:v
+		errors: 0, warnings: 0
+	module worklib.NOR2X1:v
+		errors: 0, warnings: 0
+	module worklib.NOR3X1:v
+		errors: 0, warnings: 0
+	module worklib.OAI21X1:v
+		errors: 0, warnings: 0
+	module worklib.OAI22X1:v
+		errors: 0, warnings: 0
+	module worklib.OR2X1:v
+		errors: 0, warnings: 0
+	module worklib.OR2X2:v
+		errors: 0, warnings: 0
+	module worklib.TBUFX1:v
+		errors: 0, warnings: 0
+	module worklib.TBUFX2:v
+		errors: 0, warnings: 0
+	module worklib.XNOR2X1:v
+		errors: 0, warnings: 0
+	module worklib.XOR2X1:v
+		errors: 0, warnings: 0
+	primitive worklib.udp_dff:v
+		errors: 0, warnings: 0
+	primitive worklib.udp_tlat:v
+		errors: 0, warnings: 0
+	primitive worklib.udp_rslat:v
+		errors: 0, warnings: 0
+	primitive worklib.udp_mux2:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		tb_filtro
+		AND2X2
+		AOI21X1
+		AOI22X1
+		BUFX2
+		BUFX4
+		CLKBUF1
+		CLKBUF2
+		CLKBUF3
+		DFFNEGX1
+		DFFSR
+		HAX1
+		INVX2
+		INVX4
+		LATCH
+		NAND2X1
+		NAND3X1
+		NOR2X1
+		NOR3X1
+		OAI21X1
+		OAI22X1
+		OR2X1
+		OR2X2
+		TBUFX1
+		TBUFX2
+		XOR2X1
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.LATCH:v <0x2edb1e46>
+			streams:   0, words:     0
+		worklib.DFFSR:v <0x22e6433b>
+			streams:   0, words:     0
+		worklib.DFFNEGX1:v <0x5f5021db>
+			streams:   0, words:     0
+		worklib.DFFPOSX1:v <0x60144c9d>
+			streams:   0, words:     0
+		worklib.tb_filtro:sv <0x6fa5098d>
+			streams:   5, words:  6668
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                    Instances  Unique
+		Modules:               32,990      34
+		UDPs:                  16,414       4
+		Primitives:            49,627       6
+		Timing outputs:        33,003       7
+		Registers:             16,422      16
+		Scalar wires:          49,421       -
+		Expanded wires:            32       2
+		Always blocks:              1       1
+		Initial blocks:             1       1
+		Pseudo assignments:         3       -
+		Timing checks:         98,485  16,411
+		Sparse arrays:              1       -
+		Simulation timescale:     1ps
+	Writing initial simulation snapshot: worklib.tb_filtro:sv
+Loading snapshot worklib.tb_filtro:sv .................... Done
+xcelium> source /home/tools/cadence/installs/XCELIUM2209/tools/xcelium/files/xmsimrc
+xcelium> run
+Fim do arquivo alcancado na linha 281856!
+Simulacao Concluida! Arquivos output.txt e time.txt gerados com sucesso.
+Simulation stopped via $stop(1) at time 5637220 NS + 0
+../tb/tb_filtro.sv:83         $stop; // Pausa a simulação
+xcelium> 
+xmsim: *W,CMUSEX: Control-D in interactive input - one more to exit.
+xcelium> exit
+TOOL:	xrun(64)	24.09-s001: Exiting on Jun 30, 2026 at 23:10:29 -03  (total: 00:19:45)

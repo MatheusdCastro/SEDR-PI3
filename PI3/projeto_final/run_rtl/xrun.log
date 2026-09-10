@@ -1,0 +1,49 @@
+xrun(64): 24.09-s001: (c) Copyright 1995-2024 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	24.09-s001: Started on Jun 30, 2026 at 22:45:39 -03
+xrun
+	-64bit
+	-sv
+	../rtl/lowp6.sv
+	../tb/tb_filtro.sv
+	-access +rwc
+file: ../rtl/lowp6.sv
+	module worklib.lowp6:sv
+		errors: 0, warnings: 0
+file: ../tb/tb_filtro.sv
+	module worklib.tb_filtro:sv
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		tb_filtro
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.tb_filtro:sv <0x422438a2>
+			streams:   7, words:  7869
+		worklib.lowp6:sv <0x3614bb69>
+			streams:  10, words: 112069
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                   Instances  Unique
+		Modules:                   2       2
+		Registers:                15      15
+		Scalar wires:              3       -
+		Vectored wires:            4       -
+		Always blocks:         1,026       4
+		Initial blocks:            1       1
+		Cont. assignments:         1       1
+		Pseudo assignments:        5       -
+		Sparse arrays:             1       -
+		Process Clocks:        1,024       1
+		Simulation timescale:    1ps
+	Writing initial simulation snapshot: worklib.tb_filtro:sv
+Loading snapshot worklib.tb_filtro:sv .................... Done
+xcelium> source /home/tools/cadence/installs/XCELIUM2209/tools/xcelium/files/xmsimrc
+xcelium> run
+Fim do arquivo alcancado na linha 281856!
+Simulacao Concluida! Arquivos output.txt e time.txt gerados com sucesso.
+Simulation stopped via $stop(1) at time 5637220 NS + 0
+../tb/tb_filtro.sv:83         $stop; // Pausa a simulação
+xcelium> exit
+TOOL:	xrun(64)	24.09-s001: Exiting on Jun 30, 2026 at 22:47:49 -03  (total: 00:02:10)
